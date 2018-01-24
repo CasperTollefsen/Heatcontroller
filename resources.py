@@ -1,15 +1,15 @@
 from time import sleep, localtime, strftime
-#import RPi.GPIO as GPIO
+import RPi.GPIO as GPIO
 
 def heatController():
-	# GPIO.setmode(GPIO.BOARD)
-	# GPIO.setup(11, GPIO.OUT)
+	GPIO.setmode(GPIO.BOARD)
+	GPIO.setup(11, GPIO.OUT)
 
-	# GPIO.output(11, True)
-	# sleep(0.5)
-	# GPIO.output(11, False)
+	GPIO.output(11, True)
+	sleep(0.5)
+	GPIO.output(11, False)
 
-	# GPIO.cleanup()
+	GPIO.cleanup()
 
 	print "\n[SYSTEM] Heatcontroller initiated [%s]\n" % (strftime("%H:%M:%S", localtime()))
 

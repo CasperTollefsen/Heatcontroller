@@ -2,10 +2,10 @@ from time import localtime, strftime, sleep, time
 import resources
 
 # Time to wake up
-wakeupTime = "11:21:30"
+wakeupTime = "07:15:00"
 
 # Minutes between each check
-cycleReset_interval = 0.1
+cycleReset_interval = 5
 
 startTime = strftime("%a, %d %b %Y [%H:%M:%S]")
 weekDay = strftime("%a", localtime())
